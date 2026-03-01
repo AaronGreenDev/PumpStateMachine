@@ -91,9 +91,7 @@ void uart_init() {
 
 void app_main(void)
 {
-    printf("Pump Initializing...\n");
     uart_init();
-    int i = 0;
     char data;
     while(1)
     {
