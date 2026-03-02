@@ -30,7 +30,7 @@ void uart_init() {
     };
     uart_param_config(UART_PORT, &uart_config);
     uart_set_pin(UART_PORT, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
-    uart_driver_install(UART_PORT, BUFFER_SIZE * 2, 0, 0, NULL, 0);
+    uart_driver_install(UART_PORT, BUFFER_SIZE, 0, 0, NULL, 0);
  }
 
   pump_event_t parse_input(char c){
